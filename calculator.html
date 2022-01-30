@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+<div>
+    <label for='firstDigit'></label><input id='firstDigit' type="number">
+<!--    <label for='operator'></label><input id='operator' type="text">-->
+    <form style="display: inline">
+        <select name="myList" id="operators">
+            <option value="">Please Select</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </form>
+    <label for='secondDigit'></label><input id='secondDigit' type="number">
+    =
+    <label for='result'></label><input id='result' type="number">
+    <button onclick="calculate()" id="runner">Run</button>
+</div>
+<div id="history"></div>
+
+</body>
+</html>
